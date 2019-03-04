@@ -1,60 +1,24 @@
-$dark-grey: #313234;
-$light-grey: #777;
-$white: #fff;
-$font-grey: #888282;
-$background-grey: #f7f7f7;
-$yellow: #fed136;
-
-@import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,700i,800,900&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('../fonts/DroidSerif-Regular.ttf');
 @import url('../fonts/wisdom.ttf');
-
-@font-face {
-    font-family: 'Conv_Wisdom Script AJ';
-    src: url('fonts/Wisdom Script AJ.eot');
-    src: local('☺'), 
-         url('fonts/Wisdom Script AJ.svg') format('svg'), 
-         url('fonts/Wisdom Script AJ.ttf') format('truetype'), 
-         url('fonts/Wisdom Script AJ.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@font face {
+font-family: "Wisdom";
+src: url('//db.onlinewebfonts.com/c/d6ced0df95b7cc53e0eae88817930d08?family=Wisdom+Script+AI');
+src: url('../fonts/wisdom.ttf')
 }
-
-$font-family-mon: Montserrat, sans-serif;
-$font-family-wisdom: Wisdo;
-$font-family-droid: Droid, Serif;
-$font-family-robo: Roboto Slab, serif;
-$font-family-lobster: Lobster, cursive;
-
-$phone: "(max-width: 367px)";
-$tablet: "(max-width: 768px)";
-$desktop: "(max-width: 960px)";
-
-@mixin button($width, $height, $border-radius, $background-color, $font-weight, $color, $font-family, $font-size) {
-    width: 240px;
-    height: 65px;
-    border-radius: 6px;
-    background-color: $yellow;
-    font-weight: 700;
-    color: $white;
-    font-family: $font-family-mon;
-    font-size: 18px;
-}
-
-@mixin centering($margin, $text-align) {
-    margin: 0 auto;
-    text-align: center;
-}
+font-family: "Montserrat", sans-serif;
+font-family: "Wisdom";
+font-family: "Droid Serif";
+font-family: 'Roboto Slab', serif;
 
 /*
-=== GRID ===
+ === GRID ===
 */
 
 
 * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .row::before, .row::after {
@@ -284,30 +248,11 @@ box-sizing: border-box;
   }
 }
 
-/*
- === BODY AND CONTAINER ===
-*/
-
 body {
   margin: 0 auto;
-  background-color: $white;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
   padding: 0;
-  h1 {
-    font-size: 40px;
-    line-height: 75px;
-    font-weight: 700;
-    color: $dark-grey;
-  }
-  h3 {
-  font-weight: bold;
-  color: $dark-grey;
-  font-family: $font-family-mon;
-  }
-  p {
-    font-family: $light-grey;
-    font-family: $font-family-droid;
-    font-weight: 400;
-  }
 }
 
 .container {
@@ -317,25 +262,23 @@ body {
   padding: 0;
 }
 
-
-
 /*
  === HEADER ===
 */
+header {
+  
+}
 
 .navbar {
-  margin-right:200px;
-  font-family: $font-family-mon;
-   a {
-     &:hover {
-      color: $yellow;
-    }
-  }
+
+margin-right:200px;
+font-family: "Montserrat";
 }
 
 nav ul {
   margin: 5px ;
   padding: 20px;
+  text-align: center;
   float: right;
 }
 
@@ -344,24 +287,29 @@ nav a {
   padding: 15px 20px;
   text-align: center;
   text-decoration: none;
-  color: $white;
+  color: #fff;
   cursor: pointer;
   text-transform: uppercase;
   margin: 0 auto;
 }
 
-.logo {
+nav h2:first-child {
   display: inline-block;
   margin-left: 220px;
-  font-size: 26px;
-  color: $yellow;
-  font-family: $font-family-lobster;
-  font-style: italic;
+font-size: 26px;
+line-height: 41px;
+color: #fed136;
+font-family: "Wisdom";
 }
 
 li {
   display: inline-block;
   text-align: center;
+}
+
+.navbar a:hover {
+  color: #30ccf0;
+  text-decoration: none;
 }
 
 .jumbotron {
@@ -370,73 +318,63 @@ li {
   background-size: cover;
   margin-bottom: 100px;
 }
-
-.hero {
-    h2 {
-    font-size: 40px;
-    color: $white;
-    font-family: $font-family-droid;
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
-    margin-top: 150px;
-    }  
-    .h1 {
-    font-weight: 700;
-    color: $white;
-    padding: 30px;
-    font-family: $font-family-mon;
-    font-size: 75px;
-    letter-spacing: -2px;
-    }
+.hero h2 {
+  font-size: 40px;
+color: #fff;
+font-family: "Droid Serif";
+font-weight: 400;
+font-style: italic;
+text-align: center;
+margin-top: 150px;
 }
-
-/*button {
-  @include button(240px, 65px, 6px, $yellow, 700, #fff, $font-family-mon, 18px); 
-} */
-
+.hero h1 {
+  font-weight: 700;
+  color: #fff;
+  padding: 30px;
+  font-family: "Montserrat";
+  font-size: 75px;
+letter-spacing: -2px;
+}
 .btn {
   width: 240px;
-  height: 65px;
-  border-radius: 6px;
-  background-color: $yellow;
-  font-weight: bold;
-  color: $white;
+height: 65px;
+border-radius: 6px;
+background-color: #fed136;
+font-weight: bold;
 }
 
 /*
  === SERVICES ===
 */
 
-.heading {
-    h1 {
-    margin-top: 50px;
-    }
-    p {
-    font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
-  }
+.heading h3 {
+font-size: 40px;
+line-height: 75px;
+color: #222;
+font-family: "Montserrat";
+font-weight: 700;
+margin-top: 50px;
+}
+
+.heading p {
+  font-size: 16px;
+color: #777;
+font-family: "Droid Serif";
+font-weight: 400;
+font-style: italic;
 }
 
 .icons {
   margin: 0 auto;
-  text-align: center;
   padding: 50px;
-  p {
-    font-style: normal;
-  }
 }
-
 .fa {
   height: 80px;
   width: 80px;
   background-size: cover;
   line-height: 100px;
   margin: 0 auto;
-  text-align: center;
 }
-
 .basket {
   background-image: url('../images/icon.basket.jpg');
 }
@@ -451,23 +389,19 @@ li {
   margin-top: 30px;
   text-align: center;
 }
-
-.background-1 {
-
+.row p {
+  margin:  auto 5px ;
+  font-size: 14px;
+  color: #777;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+ margin-bottom: 50px;
 }
-
-.icons p {
-    margin: 0 auto ;
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 50px;
-    max-width: 250px;
-    text-align: center;
-    font-style: italic;
-    h3 {
-    font-size: 18px;
-    font-weight: 700;
-    }
+.row h3 {
+  font-size: 18px;
+color: #222;
+font-family: "Montserrat";
+font-weight: 700;
 }
 
 
@@ -477,82 +411,69 @@ li {
 
 .portfolio {
   background-color: #f7f7f7;
-  h1 {
-    margin-top: 50px;
-    }
-    p {
-    font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
-  }
 }
 
-.gallery {
-  background-color: $background-grey;
-  h3 {
-    font-size: 18px;
-    font-weight: 700;
-    }
-    p {
-    font-size: 14px;
-    font-weight: 400;
-    font-style: italic;
-  }
-}
-
-.image-1, .image-2, .image-3, .image-4, .image-5, .image-6 {
-  width: 290px;
-  height: 300px;
-  text-align: center;
+.background-4 h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #313234;
   padding: 0;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
-.top-left, .top-middle, .top-right, .bottom-left, .bottom-middle, .bottom-right {
-  width: 290px;
-  height: 393px;
-  background-color: $white;
-  margin: 30px 20px;
-  text-align: center;
-  padding: 0;
+.background-4 p {
+  color: #888282;
+  max-width: 650px;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
-.image-1 {
-  background-image: url('../images/top.left.jpg');
-}
-.image-2 {
-  background-image: url('../images/top.middle.jpg');
-}
-.image-3 {
-  background-image: url('../images/top.right.jpg');
-}
-.image-4 {
-  background-image: url('../images/bottom.left.jpg');
-}
-.image-5 {
-  background-image: url('../images/bottom.middle.jpg');
-}
-.image-6 {
-  background-image: url('../images/bottom.right.jpg');
-}
 
-.top, .bottom {
-  margin-left: 12%;
-}
-
-.bottom-middle {
-  margin-bottom: 120px;
-}
 /*
- === ABOUT US ===
+ === GALLERY ===
 */
 
 
+.gallery {
+  width: 16.66%;
+  margin: 0;
+  float: left;
+  height: 200px;
+  background-size: cover;
+  transition: 2s;
+}
 
+.img-1, .img-2 {
+  width: 33.33%;
+}
 
+.layer {
+  display: none;
+  background: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  line-height: 200px;
+  width: 100%;
+  color: #fff;
+  transition: 2s;
+}
 
+.gallery:hover .layer {
+  display: block;
+}
 
-
-
+.fa-camera-retro, .fa-search {
+  margin: 20px;
+  background-color: white;
+  color: #000;
+  border-radius: 3px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  text-shadow: 2px 2px 8px #000;
+  box-shadow: 2px 2px 8px 1px #000;
+}
 
 
 /*
@@ -583,7 +504,7 @@ li {
   width: 180px;
   line-height: 180px;
   border-radius: 50%;
-  background-image: url('https://iping.in/wp-content/uploads/2018/05/user-avatar-4.png');
+  background-image: url(https://iping.in/wp-content/uploads/2018/05/user-avatar-4.png);
   background-size: cover;
   background-position: center center;
   text-align: center;
@@ -591,35 +512,157 @@ li {
 }
 
 .member-2 {
-  background-image: url('https://daks2k3a4ib2z.cloudfront.net/56a0a2a2c2d4186d5bd8879c/56a0a2a2c2d4186d5bd887d6_profile_kristin.jpg');
+  background-image: url(https://daks2k3a4ib2z.cloudfront.net/56a0a2a2c2d4186d5bd8879c/56a0a2a2c2d4186d5bd887d6_profile_kristin.jpg);
 }
 
 .member-3 {
-  background-image: url('http://www.enggonary.com/wp-content/uploads/2017/12/team-member-2.jpg');
+  background-image: url(http://www.enggonary.com/wp-content/uploads/2017/12/team-member-2.jpg);
 }
 
 .member-4 {
-  background-image: url('https://www.insplorion.com/app/uploads/patrik_b-1.png');
+  background-image: url(https://www.insplorion.com/app/uploads/patrik_b-1.png);
 }
 
 /*
- === PARTNERS ===
+ === PROMOTION SECTION ===
 */
+.promotion-section {
+  height: auto;
+  margin: 0 auto;
+  background-color: #313234;
+}
 
+.section-1 {
+  height: 320px;
+  background-image: url(http://cdn.gadgetreview.com/wp-content/uploads/2014/08/android-tablet-reviews.png);
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-left: 50px;
+}
+
+.section-2 {
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.section-2 h1 {
+  font-size: 32px;
+  font-weight: 900;
+  color: #fff;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.section-2 > p {
+  margin: 0;
+  padding-left: 40px;
+  text-align: left;
+  color: #fff;
+}
+
+.column-2 {
+  font-style: italic;
+}
 
 /*
- === CONTACT US ===
+ === NUMBERS ===
 */
+.numbers {
+  max-width: 900px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  display: inline;
+}
 
+.numbers p {
+  padding: 0;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #30ccf0;
+  font-weight: 600;
+}
 
+.numbers h1 {
+  font-weight: 900;
+  color: #313234;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Alfa Slab One', cursive;
+}
 
+.followers, .since, .happy-clients, .projects {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
 /*
  === FOOTER ===
 */
+footer {
+  background-color: #313234;
+  margin: 0 auto;
+}
 
-/*
-@media #{$phone} {
+.footer {
+  margin: 0 auto;
+}
+
+.footer p {
+  color: #fff;
+  text-align: left;
+  margin: 0 auto;
+  padding: 15px 10px 15px 10px;
+  font-size: 12px;
+}
+
+.footer h2 {
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: left;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.part-1, .part-2, .part-3 {
+  height: auto;
+  color: #fff;
+  text-align: left;
+  padding: 0 20px;
+}
+
+
+.info, .info-2 {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.fab {
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background-color: #30ccf0;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 3px auto;
+}
+
+.copyrights p {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 0;
+  font-size: 12px;
+  background-color: #252726;
+}
+
+@media (max-width: 367px) {
   nav ul {
     display: block;
     float: none;
@@ -627,22 +670,16 @@ li {
   }
 }
 
-@media #{$tablet} {
+@media (max-width: 768px) {
   nav ul {
     display: block;
     float: none;
     margin: 0 auto;
     text-align: center;
   }
-}
-
-.break, nav ul li {
+  .break, nav ul li {
     display: block;
   }
-
-  .background-1 {
-  margin-left: 0;
-}
   .background-2, .background-1, .background-3 {
     display: inline;
     float: none;
@@ -655,8 +692,13 @@ li {
     text-align: center;
     margin: 0 auto;
   }
- 
-  
+  .gallery {
+    width: 50%;
+  }
+  .layer {
+    display: inline-block;
+    background: none;
+  }
   .fa-camera-retro, .fa-search {
     transform: translate(0px, 70px);
     opacity: 0.6;
@@ -679,5 +721,17 @@ li {
     text-align: center;
     display: block;
     padding-bottom: 10px;
-  }  */
+  }
+ 
+
+@media (min-width: 768px) and (max-width: 960px) {
+  .layer {
+    display: inline-block;
+    background: none;
+  }
+  .fa-camera-retro, .fa-search {
+    margin: 5px;
+    opacity: 0.6;
+  }
+}
 

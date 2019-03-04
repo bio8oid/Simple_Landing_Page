@@ -1,4 +1,628 @@
-body {
-  background-color: lime;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,700i,800,900&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+@import url("../fonts/DroidSerif-Regular.ttf");
+@import url("../fonts/wisdom.ttf");
+@font-face {
+  font-family: 'Conv_Wisdom Script AJ';
+  src: url("fonts/Wisdom Script AJ.eot");
+  src: local("☺"), url("fonts/Wisdom Script AJ.svg") format("svg"), url("fonts/Wisdom Script AJ.ttf") format("truetype"), url("fonts/Wisdom Script AJ.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
+
+/*
+=== GRID ===
+*/
+* {
+  box-sizing: border-box;
+}
+
+.row::before, .row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+  width: 100%;
+  padding: 12px;
+  float: left;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-offset-1 {
+  margin-left: 8.33%;
+}
+
+.col-offset-2 {
+  margin-left: 16.66%;
+}
+
+.col-offset-3 {
+  margin-left: 25%;
+}
+
+.col-offset-4 {
+  margin-left: 33.33%;
+}
+
+.col-offset-5 {
+  margin-left: 41.66%;
+}
+
+.col-offset-6 {
+  margin-left: 50%;
+}
+
+.col-offset-7 {
+  margin-left: 58.33%;
+}
+
+.col-offset-8 {
+  margin-left: 66.66%;
+}
+
+.col-offset-9 {
+  margin-left: 75%;
+}
+
+.col-offset-10 {
+  margin-left: 83.33%;
+}
+
+.col-offset-11 {
+  margin-left: 91.66%;
+}
+
+.col-offset-12 {
+  margin-left: 100%;
+}
+
+@media (max-width: 767px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* For desktop: */
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1199px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+/*
+ === BODY AND CONTAINER ===
+*/
+body {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0;
+}
+
+body h1 {
+  font-size: 40px;
+  line-height: 75px;
+  font-weight: 700;
+  color: #313234;
+}
+
+body h3 {
+  font-weight: bold;
+  color: #313234;
+  font-family: Montserrat, sans-serif;
+}
+
+body p {
+  font-family: #777;
+  font-family: Droid, Serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*
+ === HEADER ===
+*/
+.navbar {
+  margin-right: 200px;
+  font-family: Montserrat, sans-serif;
+}
+
+.navbar a:hover {
+  color: #fed136;
+}
+
+nav ul {
+  margin: 5px;
+  padding: 20px;
+  float: right;
+}
+
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 220px;
+  font-size: 26px;
+  color: #fed136;
+  font-family: Lobster, cursive;
+  font-style: italic;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+}
+
+.jumbotron {
+  height: 800px;
+  background-image: url("../images/jb.jpg");
+  background-size: cover;
+  margin-bottom: 100px;
+}
+
+.hero h2 {
+  font-size: 40px;
+  color: #fff;
+  font-family: Droid, Serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.hero .h1 {
+  font-weight: 700;
+  color: #fff;
+  padding: 30px;
+  font-family: Montserrat, sans-serif;
+  font-size: 75px;
+  letter-spacing: -2px;
+}
+
+/*button {
+  @include button(240px, 65px, 6px, $yellow, 700, #fff, $font-family-mon, 18px); 
+} */
+.btn {
+  width: 240px;
+  height: 65px;
+  border-radius: 6px;
+  background-color: #fed136;
+  font-weight: bold;
+  color: #fff;
+}
+
+/*
+ === SERVICES ===
+*/
+.heading h1 {
+  margin-top: 50px;
+}
+
+.heading p {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.icons {
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
+}
+
+.icons p {
+  font-style: normal;
+}
+
+.fa {
+  height: 80px;
+  width: 80px;
+  background-size: cover;
+  line-height: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.basket {
+  background-image: url("../images/icon.basket.jpg");
+}
+
+.laptop {
+  background-image: url("../images/icon.laptop.jpg");
+}
+
+.web {
+  background-image: url("../images/icon.web.jpg");
+}
+
+.background-2, .background-1, .background-3 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.icons p {
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  max-width: 250px;
+  text-align: center;
+  font-style: italic;
+}
+
+.icons p h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/*
+ === OUR PORTFOLIO ===
+*/
+.portfolio {
+  background-color: #f7f7f7;
+}
+
+.portfolio h1 {
+  margin-top: 50px;
+}
+
+.portfolio p {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.gallery {
+  background-color: #f7f7f7;
+}
+
+.gallery h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.gallery p {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.image-1, .image-2, .image-3, .image-4, .image-5, .image-6 {
+  width: 290px;
+  height: 300px;
+  text-align: center;
+  padding: 0;
+}
+
+.top-left, .top-middle, .top-right, .bottom-left, .bottom-middle, .bottom-right {
+  width: 290px;
+  height: 393px;
+  background-color: #fff;
+  margin: 30px 20px;
+  text-align: center;
+  padding: 0;
+}
+
+.image-1 {
+  background-image: url("../images/top.left.jpg");
+}
+
+.image-2 {
+  background-image: url("../images/top.middle.jpg");
+}
+
+.image-3 {
+  background-image: url("../images/top.right.jpg");
+}
+
+.image-4 {
+  background-image: url("../images/bottom.left.jpg");
+}
+
+.image-5 {
+  background-image: url("../images/bottom.middle.jpg");
+}
+
+.image-6 {
+  background-image: url("../images/bottom.right.jpg");
+}
+
+.top, .bottom {
+  margin-left: 12%;
+}
+
+.bottom-middle {
+  margin-bottom: 120px;
+}
+
+/*
+ === ABOUT US ===
+*/
+/*
+ === TEAM ===
+*/
+.team {
+  max-width: 1220px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.background-15, .background-16, .background-17, .background-18 {
+  height: 320px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.background-15 h3, .background-16 h3, .background-17 h3, .background-18 h3 {
+  text-align: center;
+  color: #888282;
+}
+
+.member-1, .member-2, .member-3, .member-4 {
+  height: 180px;
+  width: 180px;
+  line-height: 180px;
+  border-radius: 50%;
+  background-image: url("https://iping.in/wp-content/uploads/2018/05/user-avatar-4.png");
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.member-2 {
+  background-image: url("https://daks2k3a4ib2z.cloudfront.net/56a0a2a2c2d4186d5bd8879c/56a0a2a2c2d4186d5bd887d6_profile_kristin.jpg");
+}
+
+.member-3 {
+  background-image: url("http://www.enggonary.com/wp-content/uploads/2017/12/team-member-2.jpg");
+}
+
+.member-4 {
+  background-image: url("https://www.insplorion.com/app/uploads/patrik_b-1.png");
+}
+
+/*
+ === PARTNERS ===
+*/
+/*
+ === CONTACT US ===
+*/
+/*
+ === FOOTER ===
+*/
+/*
+@media (max-width: 367px) {
+  nav ul {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.break, nav ul li {
+    display: block;
+  }
+
+  .background-1 {
+  margin-left: 0;
+}
+  .background-2, .background-1, .background-3 {
+    display: inline;
+    float: none;
+    text-align: center;
+  }
+  .icons p {
+    padding: 10px 60px;
+  }
+  .icons {
+    text-align: center;
+    margin: 0 auto;
+  }
+ 
+  
+  .fa-camera-retro, .fa-search {
+    transform: translate(0px, 70px);
+    opacity: 0.6;
+  }
+  .section-1, .section-2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    background-position: center center;
+  }
+  .section-2 .column-1 {
+    text-align: right;
+    padding-bottom: 30px;
+  }
+  .section-2 .column-2 {
+    text-align: left;
+  }
+  .part-1, .part-2, .part-3, .footer h2, .footer p {
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+  }  */
 /*# sourceMappingURL=style.css.map */
