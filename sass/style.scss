@@ -12,14 +12,14 @@ $yellow: #fed136;
 @import url('../fonts/wisdom.ttf');
 
 @font-face {
-    font-family: 'Conv_Wisdom Script AJ';
-    src: url('fonts/Wisdom Script AJ.eot');
-    src: local('☺'), 
-         url('fonts/Wisdom Script AJ.svg') format('svg'), 
-         url('fonts/Wisdom Script AJ.ttf') format('truetype'), 
-         url('fonts/Wisdom Script AJ.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Conv_Wisdom Script AJ';
+  src: url('fonts/Wisdom Script AJ.eot');
+  src: local('☺'), 
+  url('fonts/Wisdom Script AJ.svg') format('svg'), 
+  url('fonts/Wisdom Script AJ.ttf') format('truetype'), 
+  url('fonts/Wisdom Script AJ.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 $font-family-mon: 'Montserrat', sans-serif;
@@ -34,50 +34,50 @@ $desktop: "(max-width: 960px)";
 $desktopHD: "(min-width: 1400px)";
 
 @mixin button($width, $height, $border-radius, $background-color, $font-weight, $color, $font-family, $font-size) {
-    width: 240px;
-    height: 65px;
-    border-radius: 6px;
-    background-color: $yellow;
-    font-weight: 700;
-    color: $white;
-    font-family: $font-family-mon;
-    font-size: 18px;
+  width: 240px;
+  height: 65px;
+  border-radius: 4px;
+  background-color: $yellow;
+  font-weight: 700;
+  color: $white;
+  font-family: $font-family-mon;
+  font-size: 18px;
 }
 
 @mixin centering($margin, $text-align) {
-    margin: 0 auto;
-    text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 
 /*
  === BODY AND CONTAINER ===
-*/
+ */
 
-body {
+ body {
   margin: 0 auto;
   background-color: $white;
   padding: 0;
 }
-  h1 {
-    font-size: 40px;
-    line-height: 75px;
-    font-weight: 700;
-    color: $dark-grey;
-    font-family: $font-family-mon;
-  }
-  h3 {
+h1 {
+  font-size: 40px;
+  line-height: 75px;
+  font-weight: 700;
+  color: $dark-grey;
+  font-family: $font-family-mon;
+}
+h3 {
   font-size: 18px;
   letter-spacing: 0px;
   font-weight: 700;
   color: $dark-grey;
   font-family: $font-family-mon;
-  }
-  p {
-    font-family: $light-grey;
-    font-family: $font-family-droid;
-    font-weight: 400;
-  }
+}
+p {
+  font-family: $light-grey;
+  font-family: $font-family-droid;
+  font-weight: 400;
+}
 
 .container {
   width: 100%;
@@ -92,14 +92,15 @@ body {
 
 /*
  === HEADER ===
-*/
+ */
 
-.navbar {
-  margin-right: 10%;
-  font-family: $font-family-mon;
+ .navbar {
+    margin-right: 10%;
+    font-family: $font-family-mon;
    a {
      &:hover {
       color: $yellow;
+      text-decoration: none;
     }
   }
 }
@@ -124,7 +125,7 @@ nav a {
 .logo {
   display: inline-block;
   margin-left: 15%;
-  margin-top: 1%;
+  margin-top: 2%;
   font-size: 28px;
   color: $yellow;
   font-family: $font-family-lobster;
@@ -137,14 +138,14 @@ li {
 }
 
 .jumbotron {
-  height: 800px;
+  padding: 50px;
   background-image: url('../images/jb.jpg');
   background-size: cover;
   margin-bottom: 100px;
 }
 
 .hero {
-    h2 {
+  h2 {
     font-size: 40px;
     color: $white;
     font-family: $font-family-droid;
@@ -152,39 +153,39 @@ li {
     font-style: italic;
     text-align: center;
     margin-top: 150px;
-    }  
-    .h1 {
+  }  
+  .h1 {
     font-weight: 700;
     color: $white;
     padding: 30px;
     font-family: $font-family-mon;
     font-size: 75px;
     letter-spacing: -2px;
-    }
+  }
 }
 
 /*button {
   @include button(240px, 65px, 6px, $yellow, 700, #fff, $font-family-mon, 18px); 
-} */
+  } */
 
-.btn {
-  width: 200px;
-  height: 65px;
-  border-radius: 6px;
-  background-color: $yellow;
-  font-weight: bold;
-  color: $white;
-}
+  .btn {
+    width: 200px;
+    height: 65px;
+    border-radius: 4px;
+    background-color: $yellow;
+    font-weight: bold;
+    color: $white;
+  }
 
 /*
  === SERVICES ===
-*/
+ */
 
-.heading {
-    h1 {
+ .heading {
+  h1 {
     margin-top: 50px;
-    }
-    p {
+  }
+  p {
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
@@ -195,7 +196,6 @@ li {
   margin: 0 auto;
   text-align: center;
   padding: 50px;
-  border: 1px solid red;
   p {
     font-style: normal;
   }
@@ -223,34 +223,34 @@ li {
 .background-2, .background-1, .background-3 {
   margin-top: 30px;
   text-align: center;
-    border: 1px solid red;
 }
 
 .icons p {
-    margin: 0 auto ;
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 50px;
-    max-width: 250px;
-    text-align: center;
-    font-style: italic;
-    h3 {
+  margin: 0 auto ;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  max-width: 250px;
+  text-align: center;
+  font-style: italic;
+  h3 {
     font-size: 18px;
     font-weight: 700;
-    }
+  }
 }
 
 
 /*
  === OUR PORTFOLIO ===
-*/
+ */
 
-.portfolio {
+ .portfolio {
+  padding: 50px;
   background-color: #f7f7f7;
   h1 {
     margin-top: 80px;
-    }
-    p {
+  }
+  p {
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
@@ -260,13 +260,14 @@ li {
 }
 
 .gallery {
+  padding: 50px;
   background-color: $background-grey;
   h3 {
     padding-top: 20px;
     font-size: 18px;
     font-weight: 700;
-    }
-    p {
+  }
+  p {
     font-size: 14px;
     font-weight: 400;
     font-style: italic;
@@ -290,8 +291,8 @@ li {
 }
 
 .a {
-padding: 10px;
-width: 230px;
+  padding: 10px;
+  width: 230px;
 
 }
 
@@ -314,11 +315,6 @@ width: 230px;
   background-image: url('../images/bottom.right.jpg');
 }
 
-//.top, .bottom {
-  //width: 1000px;
- // text-align: center;
-//  margin: 0 auto;
-//}
 
 .bottom-right {
   margin-bottom: 100px;
@@ -326,13 +322,12 @@ width: 230px;
 
 /*
  === ABOUT US ===  border: 1px solid red;
-*/
-.wrap {
+ */
 
+.about-us {
+  padding: 50px;
 }
-.about {
-  //position: relative;
-
+ .about {
   h1 {
     margin-top: 100px;
   }
@@ -353,14 +348,14 @@ width: 230px;
 }
 
 .description-left, .description-right, {
-  padding: 0 0px;
+
   h3 {
     font-size: 18px;
     letter-spacing: 0px;
     font-family: "Montserrat";
     font-weight: 700;
     margin-top: 10px;
-    padding:0 30px;
+    padding:0 10%;
 
   }
   p {
@@ -369,8 +364,12 @@ width: 230px;
     color: #777777;
     font-family: "Roboto Slab";
     font-weight: 400;
-    padding:0 30px;
+    padding:0 10%;
   }
+}
+
+.line-r {
+  flex-wrap: wrap-reverse;
 }
 .line {
   display: flex;
@@ -409,33 +408,22 @@ width: 230px;
   background-image: url('../images/5.line.jpg');
 }
 .v-line {
-//height: 100px;
-//border-right: 3px solid #f1f1f1;
-//border: 1px solid red;
-//border-left: 4px solid #f1f1f1;
-//  height: 1200px;
-//  position: absolute;
-//  display: block;         
-//  left: 50%;
-//  margin-left: -2px;
-//  top: 2950px;
-z-index: -1;
-position: relative;
+  z-index: -1;
+  position: relative;
 }
 
-
-
 .team {
-    background-color: $background-grey;
+  padding: 50px;
+  background-color: $background-grey;
 }
 .members {
   h3 {
-  padding-top: 20px;
-}
+    padding-top: 20px;
+  }
 }
 
 .background-15, .background-16, .background-17, {
-min-width: 300px;
+  min-width: 300px;
 
   margin: 0 auto;
 
@@ -448,9 +436,6 @@ min-width: 300px;
 .member-1, .member-2, .member-3,{
   height: 250px;
   width: 250px;
-
-  //border-radius: 50%;
-  //background-image: url('https://iping.in/wp-content/uploads/2018/05/user-avatar-4.png');
   background-size: cover;
   background-position: center center;
   text-align: center;
@@ -469,36 +454,26 @@ min-width: 300px;
   background-image: url('../images/right.team.jpg');
 }
 
-//.social-icon {
-//  width: 50px;
-//  height: 50px;
-//  display: inline-block;
-//  background-size: cover;
-//  background-position: center center;
-//  text-align: center;
-//  margin: 0 auto;
-//}
 .fa-2x {
   width: 45px;
   height: 45px;
-line-height: 40px;
+  line-height: 40px;
   margin: 0 5px;
   text-align: center;
   cursor: pointer;
   border-radius: 50%;
   border: 3.5px solid $dark-grey;
-  //float: left;
   transition: all 0.5s ease;
-padding-right: 0px;
-font-size : 26px;
-margin-bottom: 50px;
+  padding-right: 0px;
+  font-size : 26px;
+  margin-bottom: 50px;
 }
 
 .tweeter {
   background-image: url('../images/twee.jpg');
 }
 .bottom-description {
-
+  margin-bottom: 100px;
   padding: 0 50px;
 }
 
@@ -507,6 +482,108 @@ margin-bottom: 50px;
 
 
 
+.partners {
+  padding: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.part {
+  padding: 20px;
+  height: 50px;
+  width: 200px;
+  margin: 20px;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+.envato {
+  background-image: url('../images/envato.jpg');
+}
+.wordpress {
+  background-image: url('../images/WP.jpg');
+}
+.aetuts {
+  background-image: url('../images/aetuts.jpg');
+}
+.mc {
+  background-image: url('../images/mc.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+  padding: 50px;
+  background-image: url('../images/contact.jpeg');
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  h1 {
+    color: $white;
+    margin-top: 50px;
+  }
+}
+
+.left-form, .right-form {
+  margin: 0 auto;
+}
+
+.form {
+  max-width: 1000px;
+  margin-top: 30px;
+}
+.form-control-lg {
+  margin: 30px auto;
+  font-size: 14px;
+  font-weight: bold;
+  color: #777777;
+}
+.textarea {
+  margin-top: 10px;
+}
+
+.btn-lg {
+  margin-bottom: 50px ;
+}
+
+
+
+
+
+.footer {
+  height: 80px;
+  padding: 0;
+  background-color: $white;
+}
+
+.foo-icons {
+  background-color: $dark-grey;
+  border: 3.5px solid $white;
+  transition: all 0.5s ease;
+  color: $white;
+}
+.f {
+  height: 80px;
+  i {
+    margin: 20px auto;
+  }
+  p {
+    text-align: left;
+    margin-top: 25px;
+  }
+}
 
 
 @media(min-width: 1400px) {
@@ -518,13 +595,38 @@ margin-bottom: 50px;
   }
 }
 
-@media(max-width: 367px) {
+@media(max-width: 768px) {
   .vertical-line {
-
     display: none;
+  }
 
+  .f p {
+  text-align: center;
+  }
+
+  .f-3 {
+    display: none;
+  }
+
+nav a {
+    display: block;
+}
+.logo {
+text-align: center;
+  display: block;
+  width: 100%;
+}
+
+  .c1-1, .c-2,  {
+width: 100%;
+text-align: center;
+margin: 0 auto;
+  }
+  .c-3 {
+    display: none;
   }
 }
+
 
 
 .columns {
@@ -539,6 +641,55 @@ margin-bottom: 50px;
 
 /*
  === ABOUT US ===  border: 1px solid red;
+
+
+.contact {
+  height: 600px;
+  background-image: url('../images/contact.jpeg');
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.left-form, .right-form {
+
+  max-width: 500px;
+  margin: 0 auto;
+padding: 10px;
+    border: 1px solid red;
+}
+
+.form {
+  max-width: 1010px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    border: 1px solid red;
+
+}
+.form-control-lg {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  display: flex;
   justify-content: center;
   min-height: 200px;
@@ -682,7 +833,7 @@ height: 100px;
   border-left: 3px solid #f1f1f1;
 /*
  === TEAM ===
-*/
+ */
 
 /*
 .team {
@@ -729,19 +880,19 @@ height: 100px;
 
 /*
  === PARTNERS ===
-*/
+ */
 
 
 /*
  === CONTACT US ===
-*/
+ */
 
 
 
 
 /*
  === FOOTER ===
-*/
+ */
 
 /*
 @media #{$phone} {
@@ -804,5 +955,5 @@ height: 100px;
     text-align: center;
     display: block;
     padding-bottom: 10px;
-  }  */
+    }  */
 

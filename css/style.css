@@ -14,7 +14,7 @@
 
 /*
  === BODY AND CONTAINER ===
-*/
+ */
 body {
   margin: 0 auto;
   background-color: #fff;
@@ -56,7 +56,7 @@ p {
 
 /*
  === HEADER ===
-*/
+ */
 .navbar {
   margin-right: 10%;
   font-family: "Montserrat", sans-serif;
@@ -64,6 +64,7 @@ p {
 
 .navbar a:hover {
   color: #fed136;
+  text-decoration: none;
 }
 
 nav ul {
@@ -86,7 +87,7 @@ nav a {
 .logo {
   display: inline-block;
   margin-left: 15%;
-  margin-top: 1%;
+  margin-top: 2%;
   font-size: 28px;
   color: #fed136;
   font-family: "Lobster", cursive;
@@ -99,7 +100,7 @@ li {
 }
 
 .jumbotron {
-  height: 800px;
+  padding: 50px;
   background-image: url("../images/jb.jpg");
   background-size: cover;
   margin-bottom: 100px;
@@ -126,11 +127,11 @@ li {
 
 /*button {
   @include button(240px, 65px, 6px, $yellow, 700, #fff, $font-family-mon, 18px); 
-} */
+  } */
 .btn {
   width: 200px;
   height: 65px;
-  border-radius: 6px;
+  border-radius: 4px;
   background-color: #fed136;
   font-weight: bold;
   color: #fff;
@@ -138,7 +139,7 @@ li {
 
 /*
  === SERVICES ===
-*/
+ */
 .heading h1 {
   margin-top: 50px;
 }
@@ -153,7 +154,6 @@ li {
   margin: 0 auto;
   text-align: center;
   padding: 50px;
-  border: 1px solid red;
 }
 
 .icons p {
@@ -184,7 +184,6 @@ li {
 .background-2, .background-1, .background-3 {
   margin-top: 30px;
   text-align: center;
-  border: 1px solid red;
 }
 
 .icons p {
@@ -204,8 +203,9 @@ li {
 
 /*
  === OUR PORTFOLIO ===
-*/
+ */
 .portfolio {
+  padding: 50px;
   background-color: #f7f7f7;
 }
 
@@ -222,6 +222,7 @@ li {
 }
 
 .gallery {
+  padding: 50px;
   background-color: #f7f7f7;
 }
 
@@ -288,7 +289,11 @@ li {
 
 /*
  === ABOUT US ===  border: 1px solid red;
-*/
+ */
+.about-us {
+  padding: 50px;
+}
+
 .about h1 {
   margin-top: 100px;
 }
@@ -307,17 +312,13 @@ li {
   margin-left: -2px;
 }
 
-.description-left, .description-right {
-  padding: 0 0px;
-}
-
 .description-left h3, .description-right h3 {
   font-size: 18px;
   letter-spacing: 0px;
   font-family: "Montserrat";
   font-weight: 700;
   margin-top: 10px;
-  padding: 0 30px;
+  padding: 0 10%;
 }
 
 .description-left p, .description-right p {
@@ -326,7 +327,12 @@ li {
   color: #777777;
   font-family: "Roboto Slab";
   font-weight: 400;
-  padding: 0 30px;
+  padding: 0 10%;
+}
+
+.line-r {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 
 .line {
@@ -383,6 +389,7 @@ li {
 }
 
 .team {
+  padding: 50px;
   background-color: #f7f7f7;
 }
 
@@ -441,7 +448,103 @@ li {
 }
 
 .bottom-description {
+  margin-bottom: 100px;
   padding: 0 50px;
+}
+
+.partners {
+  padding: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.part {
+  padding: 20px;
+  height: 50px;
+  width: 200px;
+  margin: 20px;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+.envato {
+  background-image: url("../images/envato.jpg");
+}
+
+.wordpress {
+  background-image: url("../images/WP.jpg");
+}
+
+.aetuts {
+  background-image: url("../images/aetuts.jpg");
+}
+
+.mc {
+  background-image: url("../images/mc.jpg");
+}
+
+.contact {
+  padding: 50px;
+  background-image: url("../images/contact.jpeg");
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+.contact h1 {
+  color: #fff;
+  margin-top: 50px;
+}
+
+.left-form, .right-form {
+  margin: 0 auto;
+}
+
+.form {
+  max-width: 1000px;
+  margin-top: 30px;
+}
+
+.form-control-lg {
+  margin: 30px auto;
+  font-size: 14px;
+  font-weight: bold;
+  color: #777777;
+}
+
+.textarea {
+  margin-top: 10px;
+}
+
+.btn-lg {
+  margin-bottom: 50px;
+}
+
+.footer {
+  height: 80px;
+  padding: 0;
+  background-color: #fff;
+}
+
+.foo-icons {
+  background-color: #313234;
+  border: 3.5px solid #fff;
+  transition: all 0.5s ease;
+  color: #fff;
+}
+
+.f {
+  height: 80px;
+}
+
+.f i {
+  margin: 20px auto;
+}
+
+.f p {
+  text-align: left;
+  margin-top: 25px;
 }
 
 @media (min-width: 1400px) {
@@ -452,8 +555,30 @@ li {
   }
 }
 
-@media (max-width: 367px) {
+@media (max-width: 768px) {
   .vertical-line {
+    display: none;
+  }
+  .f p {
+    text-align: center;
+  }
+  .f-3 {
+    display: none;
+  }
+  nav a {
+    display: block;
+  }
+  .logo {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .c1-1, .c-2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .c-3 {
     display: none;
   }
 }
@@ -469,6 +594,55 @@ li {
 
 /*
  === ABOUT US ===  border: 1px solid red;
+
+
+.contact {
+  height: 600px;
+  background-image: url('../images/contact.jpeg');
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.left-form, .right-form {
+
+  max-width: 500px;
+  margin: 0 auto;
+padding: 10px;
+    border: 1px solid red;
+}
+
+.form {
+  max-width: 1010px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    border: 1px solid red;
+
+}
+.form-control-lg {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  display: flex;
   justify-content: center;
   min-height: 200px;
@@ -612,7 +786,7 @@ height: 100px;
   border-left: 3px solid #f1f1f1;
 /*
  === TEAM ===
-*/
+ */
 /*
 .team {
   max-width: 1220px;
@@ -658,13 +832,13 @@ height: 100px;
 
 /*
  === PARTNERS ===
-*/
+ */
 /*
  === CONTACT US ===
-*/
+ */
 /*
  === FOOTER ===
-*/
+ */
 /*
 @media (max-width: 367px) {
   nav ul {
@@ -726,5 +900,5 @@ height: 100px;
     text-align: center;
     display: block;
     padding-bottom: 10px;
-  }  */
+    }  */
 /*# sourceMappingURL=style.css.map */
