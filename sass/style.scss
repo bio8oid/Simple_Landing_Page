@@ -285,30 +285,12 @@ li {
   padding: 10px;
   max-width: 300px;
 }
+
+
 /*
-.image-1 {
-  background-image: url('../images/top.left.jpg');
-}
-.image-2 {
-  background-image: url('../images/top.middle.jpg');
-}
-.image-3 {
-  background-image: url('../images/top.right.jpg');
-}
-.image-4 {
-  background-image: url('../images/bottom.left.jpg');
-}
-.image-5 {
-  background-image: url('../images/bottom.middle.jpg');
-}
-.image-6 {
-  background-image: url('../images/bottom.right.jpg');
-}
-
-
-
  === ABOUT US === 
  */
+
 
 .about-us{
   padding: 5%;
@@ -387,18 +369,6 @@ li {
   background-position: center center;
   background-repeat: no-repeat;
 }
-//
-//.member-1 {
-//  background-image: url('../images/left.team.jpg');
-//}
-//
-//.member-2 {
-//  background-image: url('../images/middle.team.jpg');
-//}
-//
-//.member-3 {
-//  background-image: url('../images/right.team.jpg');
-//}
 
 .fa-2x {
   width: 45px;
@@ -438,22 +408,9 @@ li {
   background-position: center center;
 }
 
-//.envato {
-//  background-image: url('../images/envato.jpg');
-//}
-//.wordpress {
-//  background-image: url('../images/WP.jpg');
-//}
-//.aetuts {
-//  background-image: url('../images/aetuts.jpg');
-//}
-//.mc {
-//  background-image: url('../images/mc.jpg');
-//}
-
 
 /*
-=== CONTACT US ===border: 1px solid orange;
+=== CONTACT US ===
  */
 
 
@@ -463,7 +420,6 @@ li {
   background-size: cover;
   background-position: center center;
   text-align: center;
-  border: 1px solid orange;
   h1 {
     color: $white;
     margin-top: 50px;
@@ -473,7 +429,6 @@ li {
 .left-form, .right-form {
   margin: 0 auto;
   padding:0;
-  border: 1px solid orange;
 }
 
 .form {
@@ -496,7 +451,6 @@ li {
   padding: 3%;
   font-weight: bold;
   color: $light-grey;
-  border: 1px solid orange;
 }
 .right-c {
   height:300px;
@@ -505,7 +459,6 @@ li {
   font-weight: bold;
   color: $light-grey;
   margin-bottom: 3% ;
-  border: 1px solid orange;
 }
 
 .btn-lg {
