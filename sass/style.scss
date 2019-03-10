@@ -285,7 +285,7 @@ li {
   padding: 10px;
   max-width: 300px;
 }
-
+/*
 .image-1 {
   background-image: url('../images/top.left.jpg');
 }
@@ -306,7 +306,7 @@ li {
 }
 
 
-/*
+
  === ABOUT US === 
  */
 
@@ -387,18 +387,18 @@ li {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
-.member-1 {
-  background-image: url('../images/left.team.jpg');
-}
-
-.member-2 {
-  background-image: url('../images/middle.team.jpg');
-}
-
-.member-3 {
-  background-image: url('../images/right.team.jpg');
-}
+//
+//.member-1 {
+//  background-image: url('../images/left.team.jpg');
+//}
+//
+//.member-2 {
+//  background-image: url('../images/middle.team.jpg');
+//}
+//
+//.member-3 {
+//  background-image: url('../images/right.team.jpg');
+//}
 
 .fa-2x {
   width: 45px;
@@ -438,22 +438,22 @@ li {
   background-position: center center;
 }
 
-.envato {
-  background-image: url('../images/envato.jpg');
-}
-.wordpress {
-  background-image: url('../images/WP.jpg');
-}
-.aetuts {
-  background-image: url('../images/aetuts.jpg');
-}
-.mc {
-  background-image: url('../images/mc.jpg');
-}
+//.envato {
+//  background-image: url('../images/envato.jpg');
+//}
+//.wordpress {
+//  background-image: url('../images/WP.jpg');
+//}
+//.aetuts {
+//  background-image: url('../images/aetuts.jpg');
+//}
+//.mc {
+//  background-image: url('../images/mc.jpg');
+//}
 
 
 /*
-=== CONTACT US ===
+=== CONTACT US ===border: 1px solid orange;
  */
 
 
@@ -463,6 +463,7 @@ li {
   background-size: cover;
   background-position: center center;
   text-align: center;
+  border: 1px solid orange;
   h1 {
     color: $white;
     margin-top: 50px;
@@ -471,23 +472,44 @@ li {
 
 .left-form, .right-form {
   margin: 0 auto;
+  padding:0;
+  border: 1px solid orange;
 }
 
 .form {
   max-width: 1000px;
-  margin-top: 30px;
+  margin: 0 auto;
+  padding:0;
 }
-.form-control-lg {
-  margin: 30px auto;
+
+.left-2 {
+  margin: 4% auto;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+.left-1 {
+  margin-top: 7%;
+}
+.left-1, .left-3 {
+  font-size: 14px;
+  padding: 3%;
+  font-weight: bold;
+  color: $light-grey;
+  border: 1px solid orange;
+}
+.right-c {
+  height:300px;
+  padding: 3%;
   font-size: 14px;
   font-weight: bold;
   color: $light-grey;
-}
-.textarea {
-  margin-top: 10px;
+  margin-bottom: 3% ;
+  border: 1px solid orange;
 }
 
 .btn-lg {
+  margin-top: 20px ;
   margin-bottom: 50px ;
 }
 
