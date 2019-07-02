@@ -1,3 +1,5 @@
+//import "normalize";
+
 $dark-grey: #313234;
 $light-grey: #777777;
 $white: #fff;
@@ -433,12 +435,13 @@ li {
 
 .form {
   max-width: 1000px;
+  height: 30%;
   margin: 0 auto;
   padding:0;
 }
 
 .left-2 {
-  margin: 4% auto;
+  margin: 5% auto;
   font-size: 14px;
   font-weight: bold;
 
@@ -453,12 +456,12 @@ li {
   color: $light-grey;
 }
 .right-c {
-  height:300px;
+
   padding: 3%;
   font-size: 14px;
   font-weight: bold;
   color: $light-grey;
-  margin-bottom: 3% ;
+  margin-bottom:3% ;
 }
 
 .btn-lg {
@@ -555,8 +558,14 @@ li {
   }
   p {
     text-align: center;
+    padding: 0 20%;
   }
 }
+
+
+
+
+
 
 .f-section p {
   text-align: center;
@@ -569,6 +578,9 @@ li {
 .part {
  height: 65px;
  margin: 10px;
+}
+.left-1 {
+  margin-top: 9%;
 }
 
 }
