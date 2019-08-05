@@ -5,7 +5,7 @@
 @import url("../fonts/DroidSerif-Regular.ttf");
 @import url("../fonts/wisdom.ttf");
 @font-face {
-  font-family: 'Conv_Wisdom Script AJ';
+  font-family: "Conv_Wisdom Script AJ";
   src: url("fonts/Wisdom Script AJ.eot");
   src: local("☺"), url("fonts/Wisdom Script AJ.svg") format("svg"), url("fonts/Wisdom Script AJ.ttf") format("truetype"), url("fonts/Wisdom Script AJ.woff") format("woff");
   font-weight: normal;
@@ -129,7 +129,7 @@ li {
 .btn {
   max-width: 240px;
   height: 65px;
-  border-radius: 2px;
+  border-radius: 5px;
   background-color: #fed136;
   font-weight: 700;
   color: #fff;
@@ -191,7 +191,9 @@ li {
   background-image: url("../images/icon.web.jpg");
 }
 
-.background-2, .background-1, .background-3 {
+.background-2,
+.background-1,
+.background-3 {
   text-align: center;
   margin: 0 auto;
   max-width: 300px;
@@ -232,7 +234,12 @@ li {
   padding-bottom: 25px;
 }
 
-.image-1, .image-2, .image-3, .image-4, .image-5, .image-6 {
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6 {
   max-width: 100%;
   height: auto;
   text-align: center;
@@ -240,7 +247,12 @@ li {
   margin-bottom: 20px;
 }
 
-.top-left, .top-middle, .top-right, .bottom-left, .bottom-middle, .bottom-right {
+.top-left,
+.top-middle,
+.top-right,
+.bottom-left,
+.bottom-middle,
+.bottom-right {
   max-width: 290px;
   max-height: 393px;
   background-color: #fff;
@@ -281,14 +293,16 @@ li {
   min-height: 300px;
 }
 
-.left-text, .right-text {
+.left-text,
+.right-text {
   display: -ms-flexbox;
   display: flex;
   max-width: 40%;
   padding: 1% 5%;
 }
 
-.left-text h3, .right-text h3 {
+.left-text h3,
+.right-text h3 {
   font-size: 18px;
   letter-spacing: 0px;
   font-family: "Montserrat", sans-serif;
@@ -296,7 +310,8 @@ li {
   color: #313234;
 }
 
-.left-text p, .right-text p {
+.left-text p,
+.right-text p {
   font-size: 14px;
   letter-spacing: 0px;
   color: #777777;
@@ -311,7 +326,8 @@ li {
   margin-right: auto;
 }
 
-.left-text h3, .left-text p {
+.left-text h3,
+.left-text p {
   text-align: right;
 }
 
@@ -338,7 +354,8 @@ li {
   font-style: normal;
 }
 
-.right-text h3, .right-text p {
+.right-text h3,
+.right-text p {
   text-align: left;
 }
 
@@ -372,12 +389,16 @@ li {
   line-height: 8px;
 }
 
-.background-15, .background-16, .background-17 {
+.background-15,
+.background-16,
+.background-17 {
   max-width: 250px;
   margin: 0 auto;
 }
 
-.member-1, .member-2, .member-3 {
+.member-1,
+.member-2,
+.member-3 {
   max-height: auto;
   min-width: 200px;
   max-width: 100%;
@@ -429,7 +450,6 @@ li {
   background-image: url("../images/contact.jpeg");
   background-size: cover;
   background-position: center center;
-  text-align: center;
 }
 
 .contact h1 {
@@ -437,46 +457,40 @@ li {
   margin-top: 50px;
 }
 
-.left-form, .right-form {
-  margin: 0 auto;
-  padding: 0;
+.form-group {
+  font-size: 14px;
+  color: #777777;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  height: auto;
 }
 
-.form {
-  max-width: 1000px;
-  height: 30%;
-  margin: 0 auto;
-  padding: 0;
+.form-group-left {
+  width: 50%;
 }
 
 .left-2 {
-  margin: 5% auto;
-  font-size: 14px;
-  font-weight: bold;
+  margin: 20px 0;
 }
 
-.left-1 {
-  margin-top: 7%;
+.left-1,
+.left-3,
+.left-2 {
+  font-weight: bold;
+  height: 50px;
 }
 
-.left-1, .left-3 {
-  font-size: 14px;
-  padding: 3%;
+.textarea {
+  height: 180px;
+  width: 50%;
   font-weight: bold;
-  color: #777777;
-}
-
-.right-c {
-  padding: 3%;
-  font-size: 14px;
-  font-weight: bold;
-  color: #777777;
-  margin-bottom: 3%;
+  margin-left: 20px;
 }
 
 .btn-lg {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  display: block;
+  margin: 50px auto;
 }
 
 /*
@@ -519,7 +533,16 @@ li {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .logo {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+  }
+}
+
+@media (max-width: 996px) {
   .navbar {
     display: block;
     float: none;
@@ -529,11 +552,19 @@ li {
   nav ul li {
     display: block;
   }
-  .logo {
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    padding: 5%;
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .form-group-left,
+  .textarea {
+    width: 100%;
+    margin: 20px 0;
   }
   .module {
     min-height: 400px;
@@ -545,10 +576,16 @@ li {
   .core {
     position: static;
   }
+  .last-module {
+    display: block;
+    height: 200px;
+    text-align: center;
+  }
   .vertical-line {
     display: none;
   }
-  .left-text, .right-text {
+  .left-text,
+  .right-text {
     display: block;
     -ms-flex-direction: column;
         flex-direction: column;
@@ -556,10 +593,12 @@ li {
     max-width: 100%;
     padding: 5%;
   }
-  .left-text h3, .right-text h3 {
+  .left-text h3,
+  .right-text h3 {
     text-align: center;
   }
-  .left-text p, .right-text p {
+  .left-text p,
+  .right-text p {
     text-align: center;
     padding: 0 20%;
   }
