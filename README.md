@@ -1,3 +1,3 @@
 
-[LINK](https://kodilla-wdp-1905-03.netlify.com)
+[LINK to Website](https://bio8oid.github.io/Simple_Landing_Page/)
 
