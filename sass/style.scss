@@ -1,4 +1,4 @@
-//import "normalize";
+@import "normalize";
 
 $dark-grey: #313234;
 $light-grey: #777777;
@@ -32,6 +32,28 @@ $tablet: "(max-width: 768px)";
 $desktop: "(max-width: 960px)";
 $desktopHD: "(min-width: 1400px)";
 
+@mixin wiggle-hover {
+  animation: shake 75ms infinite;
+  animation-timing-function: linear;
+
+  @keyframes shake {
+    0% {
+      transform: rotate(0.5deg);
+    }
+    50% {
+      transform: rotate(-0.5deg);
+    }
+    100% {
+      transform: rotate(0.5deg);
+    }
+  }
+}
+
+@mixin zoom-hover {
+  transform: scale(1.1);
+  transition: all ease 500ms;
+}
+
 @mixin button-color {
   max-width: 240px;
   height: 65px;
@@ -55,6 +77,7 @@ $desktopHD: "(min-width: 1400px)";
     color: $dark-grey;
     font-family: $font-family-mon;
   }
+
   p {
     font-size: 18px;
     color: $light-grey;
@@ -72,6 +95,7 @@ $desktopHD: "(min-width: 1400px)";
     font-weight: 700;
     color: $dark-grey;
   }
+
   p {
     font-size: 14px;
     letter-spacing: 0px;
@@ -84,9 +108,11 @@ $desktopHD: "(min-width: 1400px)";
 
 .section-heading {
   @include section-heading;
+
   h1 {
     margin-top: 50px;
   }
+
   p {
     margin-bottom: 50px;
   }
@@ -121,10 +147,13 @@ body {
   display: table;
   clear: both;
   font-family: $font-family-mon;
+
   a {
-    &:hover {
-      color: $yellow;
-      text-decoration: none;
+    @media not all and (hover: none) {
+      &:hover {
+        color: $yellow;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -177,6 +206,7 @@ li {
     text-align: center;
     margin-top: 150px;
   }
+
   .h1 {
     font-weight: 700;
     color: $white;
@@ -189,6 +219,12 @@ li {
 
 .btn {
   @include button-color;
+
+  @media not all and (hover: none) {
+    &:hover {
+      @include wiggle-hover;
+    }
+  }
 }
 
 /*
@@ -200,9 +236,11 @@ li {
   text-align: center;
   padding: 0 50px 0 50px;
   @include section-description;
+
   h3 {
     margin-top: 20px;
   }
+
   p {
     margin-bottom: 100px;
   }
@@ -218,12 +256,32 @@ li {
 
 .basket {
   background-image: url("../images/icon.basket.jpg");
+
+  @media not all and (hover: none) {
+    &:hover {
+      @include zoom-hover;
+    }
+  }
 }
+
 .laptop {
   background-image: url("../images/icon.laptop.jpg");
+
+  @media not all and (hover: none) {
+    &:hover {
+      @include zoom-hover;
+    }
+  }
 }
+
 .web {
   background-image: url("../images/icon.web.jpg");
+
+  @media not all and (hover: none) {
+    &:hover {
+      @include zoom-hover;
+    }
+  }
 }
 
 .background-2,
@@ -245,9 +303,11 @@ li {
 
 .gallery {
   @include section-description;
+
   h3 {
     padding-top: 15px;
   }
+
   p {
     font-style: italic;
     line-height: 6px;
@@ -285,6 +345,12 @@ li {
 .frame {
   padding: 10px;
   max-width: 300px;
+
+  @media not all and (hover: none) {
+    &:hover {
+      @include wiggle-hover;
+    }
+  }
 }
 
 /*
@@ -311,6 +377,12 @@ li {
   display: flex;
   justify-content: center;
   min-height: 300px;
+
+  @media not all and (hover: none) {
+    &:hover {
+      @include zoom-hover;
+    }
+  }
 }
 
 .left-text,
@@ -324,6 +396,7 @@ li {
 .left-text {
   justify-content: center;
   margin-right: auto;
+
   h3,
   p {
     text-align: right;
@@ -334,6 +407,7 @@ li {
   justify-content: flex-start;
   margin-left: auto;
   @include section-description;
+
   h3,
   p {
     text-align: left;
@@ -348,8 +422,10 @@ li {
   padding: 5%;
   background-color: $background-grey;
 }
+
 .members {
   @include section-description;
+
   h3 {
     margin-top: 20px;
     line-height: 8px;
@@ -372,6 +448,12 @@ li {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+
+  @media not all and (hover: none) {
+    &:hover {
+      @include zoom-hover;
+    }
+  }
 }
 
 .fa-2x {
@@ -387,6 +469,13 @@ li {
   padding-right: 0px;
   font-size: 26px;
   margin-bottom: 50px;
+
+  @media not all and (hover: none) {
+    &:hover {
+      color: $background-grey;
+      background: $dark-grey;
+    }
+  }
 }
 
 .bottom-description {
@@ -408,6 +497,12 @@ li {
   height: 50px;
   background-size: cover;
   background-position: center center;
+
+  @media not all and (hover: none) {
+    &:hover {
+      @include zoom-hover;
+    }
+  }
 }
 
 /*
@@ -467,7 +562,7 @@ li {
 
 .footer {
   height: 80px;
-  padding: 0;
+  padding: 0 2%;
   background-color: $white;
 }
 
@@ -479,9 +574,17 @@ li {
 
 .f-section {
   height: 80px;
+
   i {
     margin: 20px auto;
+
+    @media not all and (hover: none) {
+      &:hover {
+        @include zoom-hover;
+      }
+    }
   }
+
   p {
     text-align: left;
     margin-top: 25px;
@@ -550,11 +653,11 @@ li {
     height: 200px;
     text-align: center;
   }
-  
+
   .vertical-line {
     display: none;
   }
-  
+
   .left-text,
   .right-text {
     display: block;
@@ -562,9 +665,11 @@ li {
     text-align: center;
     max-width: 100%;
     padding: 5%;
+
     h3 {
       text-align: center;
     }
+
     p {
       text-align: center;
       padding: 0 20%;
