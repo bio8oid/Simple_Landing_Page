@@ -1,0 +1,22 @@
+$dark-grey: #313234;
+$light-grey: #777777;
+$white: #fff;
+$background-grey: #f7f7f7;
+$yellow: #fed136;
+
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,700i,800,900&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+@import url("../fonts/DroidSerif-Regular.ttf");
+@import url("../fonts/wisdom.ttf");
+
+$font-family-mon: "Montserrat", sans-serif;
+$font-family-wisdom: "Wisdo";
+$font-family-droid: "Droid", Serif;
+$font-family-robo: "Roboto Slab", serif;
+$font-family-lobster: "Lobster", cursive;
+
+$phone: "(max-width: 367px)";
+$tablet: "(max-width: 768px)";
+$desktop: "(max-width: 960px)";
+$desktopHD: "(min-width: 1400px)";

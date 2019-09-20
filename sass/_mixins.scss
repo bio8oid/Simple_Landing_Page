@@ -1,0 +1,89 @@
+@mixin wiggle-hover {
+  animation: shake 200ms;
+  animation-timing-function: linear;
+
+  @keyframes shake {
+    0% {
+      transform: rotate(0.5deg);
+    }
+    50% {
+      transform: rotate(-0.5deg);
+    }
+    100% {
+      transform: rotate(0.5deg);
+    }
+  }
+}
+
+@mixin zoom-hover {
+  transform: scale(1.1);
+  transition: all ease 500ms;
+}
+
+@mixin section-description {
+  h3 {
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-family: $font-family-mon;
+    font-weight: 700;
+    color: $dark-grey;
+  }
+
+  p {
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: $light-grey;
+    font-family: $font-family-robo;
+    font-weight: 400;
+  }
+}
+
+
+/*
+ === BODY AND CONTAINER ===
+ */
+
+ body {
+  background-color: $white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: $dark-grey;
+    font-family: $font-family-mon;
+  }
+
+  p {
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: $light-grey;
+    font-family: $font-family-droid;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+.btn {
+  max-width: 240px;
+  height: 65px;
+  border-radius: 5px;
+  background-color: $yellow;
+  font-weight: 700;
+  color: $white;
+  font-family: $font-family-mon;
+  font-size: 18px;
+
+  @media not all and (hover: none) {
+    &:hover {
+      @include wiggle-hover;
+    }
+  }
+}
