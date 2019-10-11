@@ -893,7 +893,7 @@ body .section-about-us .right-text {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .jumbotron-wrapper,
   .jumbotron-navbar,
   .logo {
@@ -910,9 +910,6 @@ body .section-about-us .right-text {
     text-align: center;
     transform: translateY(-20px);
   }
-}
-
-@media (max-width: 768px) {
   body .section-about-us .module {
     -ms-flex-direction: column;
         flex-direction: column;
