@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
-    <title>Project 7.7</title>
+    <title>Simple Landing</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
@@ -37,10 +37,10 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#">HOME</a>
-                <a class="nav-item nav-link" href="#">SERVICES</a>
-                <a class="nav-item nav-link" href="#">PORTFOLIO</a>
-                <a class="nav-item nav-link" href="#">ABOUT</a>
-                <a class="nav-item nav-link" href="#">CONTACT</a>
+                <a class="nav-item nav-link" href="#services">SERVICES</a>
+                <a class="nav-item nav-link" href="#portfolio">PORTFOLIO</a>
+                <a class="nav-item nav-link" href="#about">ABOUT</a>
+                <a class="nav-item nav-link" href="#contact">CONTACT</a>
             </div>
         </div>
     </nav>
@@ -53,11 +53,11 @@
             <div class="jumbotron-wrapper container">
                 <h2 class="logo">Golden</h2>
                 <ul class="jumbotron-navbar">
-                    <li class="active"><a href="#">HOME</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a class="active" href="#">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -72,7 +72,7 @@
 
     <!-- SERVICES -->
 
-    <section class="section-services">
+    <section id="services" class="section-services">
         <div class="text-center section-heading">
             <h1>SERVICES</h1>
             <p>Proln lorek impsium pimpum pimpum</p>
@@ -107,7 +107,7 @@
 
     <!-- PORTFOLIO -->
 
-    <section class="section-portfolio">
+    <section id="portfolio" class="section-portfolio">
         <div class="container-fluid text-center section-heading">
             <h1>OUR PORTFOLIO</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -161,7 +161,7 @@
 
     <!-- ABOUT US -->
 
-    <section class="container section-about-us">
+    <section id="about" class="container section-about-us">
 
         <div class="text-center section-heading">
             <h1>ABOUT US</h1>
@@ -224,7 +224,7 @@
 
     <!-- OUR AMAZING TEAM -->
 
-    <section class="container-fluid section-team">
+    <section id="team" class="container-fluid section-team">
         <div class="text-center section-heading">
             <h1>OUR AMAZING TEAM</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -233,7 +233,7 @@
         <div class="container text-center">
             <div class="row members">
                 <div class="col-md-4 col-sm-12">
-                    <div class="member-img"><img src='images/left.team.jpg' class="img-fluid" alt="team"></div>
+                    <div class="member-img"><img src="images/left.team.jpg" class="img-fluid" alt="team"></div>
                     <h3>Kimberly Thompson</h3>
                     <p>Marketer</p>
                     <div class="fa faf fa-twitter"></div>
@@ -242,7 +242,7 @@
                 </div>
 
                 <div class="col-md-4 col-sm-12">
-                    <div class="member-img"><img src='images/middle.team.jpg' class="img-fluid" alt="team"></div>
+                    <div class="member-img"><img src="images/middle.team.jpg" class="img-fluid" alt="team"></div>
                     <h3>Rico Massimo</h3>
                     <p>Coder</p>
                     <div class="fa faf fa-twitter"></div>
@@ -251,7 +251,7 @@
                 </div>
 
                 <div class="col-md-4 col-sm-12">
-                    <div class="member-img"><img src='images/right.team.jpg' class="img-fluid" alt="team"></div>
+                    <div class="member-img"><img src="images/right.team.jpg" class="img-fluid" alt="team"></div>
                     <h3>Uku Mason</h3>
                     <p>Graphic Designer</p>
                     <div class="fa faf fa-facebook"></div>
@@ -277,7 +277,7 @@
 
     <!-- CONTACT US -->
 
-    <section class="container-fluid section-contact-us">
+    <section id="contact" class="container-fluid section-contact-us">
         <div class="text-center section-heading">
             <h1>CONTACT US</h1>
             <p>Proln lorek impsium pimpum pimpum</p>
@@ -306,10 +306,9 @@
                 <i class="fa faf fa-google foo-icons"></i>
             </div>
         </div>
-        </div>
     </footer>
 
-    <script type="text/javascript" src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 

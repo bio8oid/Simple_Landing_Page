@@ -7,11 +7,12 @@
  */
 
 .navbar-custom {
+  padding: 0 20px;
   background-image: url("../images/hero.png");
-  box-shadow: 10px 10px 47px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 47px 0px rgba(0, 0, 0, 0.75);
 
   .navbar-brand {
-    font-size: 42px;
+    font-size: 22px;
     color: $yellow;
     font-family: $font-family-lobster;
     font-style: italic;
@@ -21,19 +22,21 @@
     }
   }
 
-  .navbar-nav .nav-link {
-    color: $white;
+  .navbar-collapse .navbar-nav {
+    .nav-item.active,
+    .nav-item:hover {
+      color: $yellow;
+    }
+
+    .nav-link {
+      color: $white;
+    }
   }
 
   .navbar-toggler-icon,
   .burger {
     color: $yellow;
-    font-size: 36px;
-  }
-
-  .nav-item.active,
-  .nav-item:hover {
-    color: $yellow !important;
+    font-size: 22px;
   }
 }
 
@@ -44,6 +47,7 @@
 .jumbotron {
   background-image: url("../images/hero.png");
   background-size: cover;
+  margin: 0;
   border-radius: 0;
 
   .logo {
@@ -74,7 +78,8 @@
       cursor: pointer;
 
       @media not all and (hover: none) {
-        &:hover {
+        &:hover,
+        &.active {
           color: $yellow;
           text-decoration: none;
         }
@@ -109,7 +114,7 @@
  */
 
 .section-services {
-  padding: 50px 5%;
+  padding: 100px 5%;
 
   .icons {
     text-align: center;
@@ -147,7 +152,7 @@
  */
 
 .section-portfolio {
-  padding: 5%;
+  padding: 100px 5%;
   background-color: $background-grey;
   display: flex;
   justify-content: center;
@@ -184,7 +189,9 @@
  === ABOUT US === 
  */
 
-.section-about-us {
+body .section-about-us {
+  padding-top: 100px;
+
   .core {
     position: absolute;
   }
@@ -396,7 +403,8 @@
   }
 }
 
-@media (max-width: 996px) {
+@media (max-width: 992px) {
+  //  Hero \\
   .jumbotron-wrapper,
   .jumbotron-navbar,
   .logo {
