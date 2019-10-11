@@ -355,7 +355,7 @@ body {
   margin: 0 auto;
 }
 
-.section-heading h1 {
+.section-heading h2 {
   font-size: 40px;
   font-weight: 700;
   color: #313234;
@@ -484,7 +484,7 @@ body {
   }
 }
 
-.jumbotron .hero h2 {
+.jumbotron .hero h1 {
   font-size: 40px;
   color: #fff;
   font-family: "Droid", Serif;
@@ -494,7 +494,7 @@ body {
   margin-top: 150px;
 }
 
-.jumbotron .hero .h1 {
+.jumbotron .hero .hero-slogan {
   font-weight: 700;
   color: #fff;
   padding: 30px;
@@ -769,7 +769,11 @@ body .section-about-us .right-text {
       flex-wrap: wrap;
 }
 
-.part {
+.section-partners .last {
+  transform: translateX(15px);
+}
+
+.section-partners .part {
   margin: 25px 50px;
   height: 50px;
   background-size: cover;
@@ -777,7 +781,7 @@ body .section-about-us .right-text {
 }
 
 @media not all and (hover: none) {
-  .part:hover {
+  .section-partners .part:hover {
     transform: scale(1.1);
     transition: all ease 500ms;
   }
@@ -794,7 +798,7 @@ body .section-about-us .right-text {
   text-align: center;
 }
 
-.section-contact-us h1 {
+.section-contact-us h2 {
   color: #fff;
 }
 
@@ -863,6 +867,14 @@ body .section-about-us .right-text {
   color: #fff;
 }
 
+@media not all and (hover: none) {
+  .section-footer .foo-icons:hover {
+    background: #f7f7f7;
+    color: #313234;
+    border: 3px solid #313234;
+  }
+}
+
 /*
  === MEDIA ===
  */
@@ -890,35 +902,36 @@ body .section-about-us .right-text {
         align-items: center;
     -ms-flex-direction: column;
         flex-direction: column;
+    padding: 0;
   }
   .jumbotron-wrapper .logo,
   .jumbotron-navbar .logo,
   .logo .logo {
     text-align: center;
-    transform: translate(20px, -20px);
+    transform: translateY(-20px);
   }
 }
 
 @media (max-width: 768px) {
-  .section-about-us .module {
+  body .section-about-us .module {
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
   }
-  .section-about-us .core {
+  body .section-about-us .core {
     position: static;
   }
-  .section-about-us .last-module {
+  body .section-about-us .last-module {
     display: block;
     height: 200px;
     text-align: center;
   }
-  .section-about-us .vertical-line {
+  body .section-about-us .vertical-line {
     display: none;
   }
-  .section-about-us .left-text,
-  .section-about-us .right-text {
+  body .section-about-us .left-text,
+  body .section-about-us .right-text {
     max-width: 90%;
     text-align: center;
     margin: 35px 0;

@@ -88,7 +88,7 @@
   }
 
   .hero {
-    h2 {
+    h1 {
       font-size: 40px;
       color: $white;
       font-family: $font-family-droid;
@@ -98,7 +98,7 @@
       margin-top: 150px;
     }
 
-    .h1 {
+    .hero-slogan {
       font-weight: 700;
       color: $white;
       padding: 30px;
@@ -293,17 +293,21 @@ body .section-about-us {
   justify-content: center;
   padding-bottom: 15px;
   flex-wrap: wrap;
-}
 
-.part {
-  margin: 25px 50px;
-  height: 50px;
-  background-size: cover;
-  background-position: center;
+  .last {
+    transform: translateX(15px);
+  }
 
-  @media not all and (hover: none) {
-    &:hover {
-      @include zoom-hover;
+  .part {
+    margin: 25px 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+
+    @media not all and (hover: none) {
+      &:hover {
+        @include zoom-hover;
+      }
     }
   }
 }
@@ -319,7 +323,7 @@ body .section-about-us {
   background-position: center;
   text-align: center;
 
-  h1 {
+  h2 {
     color: $white;
   }
 }
@@ -381,6 +385,14 @@ body .section-about-us {
     background-color: $dark-grey;
     border: 3.5px solid $white;
     color: $white;
+
+    @media not all and (hover: none) {
+      &:hover {
+        background: $background-grey;
+        color: $dark-grey;
+        border: 3px solid $dark-grey;
+      }
+    }
   }
 }
 
@@ -411,10 +423,11 @@ body .section-about-us {
     width: 100%;
     align-items: center;
     flex-direction: column;
+    padding: 0;
 
     .logo {
       text-align: center;
-      transform: translate(20px, -20px);
+      transform: translateY(-20px);
     }
   }
 }
@@ -422,7 +435,7 @@ body .section-about-us {
 @media (max-width: 768px) {
   // About Us \\
 
-  .section-about-us {
+  body .section-about-us {
     .module {
       flex-direction: column;
       align-items: center;
