@@ -2,7 +2,7 @@
     $(document).ready(function(){    
         $(".navbar").hide();                
         $(window).scroll(function(){                          
-            if ($(this).scrollTop() > 650) {
+            if ($(this).scrollTop() > 640) {
                 $('.navbar').fadeIn(700);
             } else {
                 $('.navbar').fadeOut(0);
