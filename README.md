@@ -1,3 +1,3 @@
 
-[LINK to Website](https://bio8oid.github.io/Simple_Landing_Page/)
+[LINK to Website](https://golden-landing.netlify.com/)
 
