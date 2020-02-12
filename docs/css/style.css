@@ -129,7 +129,7 @@ body { background-color: #fff; }
     100% { transform: rotate(0.5deg); } } }
 
 /* === STICKY NAVBAR === */
-.navbar-custom { padding: 0 20px; background-image: url("../images/hero.png"); box-shadow: 10px 10px 47px 0px rgba(0, 0, 0, 0.75); }
+.navbar-custom { padding: 0 20px; background-image: url("../images/hero.webp"); box-shadow: 10px 10px 47px 0px rgba(0, 0, 0, 0.75); }
 
 .navbar-custom .navbar-brand { font-size: 22px; color: #fed136; font-family: "Lobster", cursive; font-style: italic; }
 
@@ -142,7 +142,7 @@ body { background-color: #fff; }
 .navbar-custom .navbar-toggler-icon, .navbar-custom .burger { color: #fed136; font-size: 22px; }
 
 /* === HERO === */
-.jumbotron { background-image: url("../images/hero.png"); background-size: cover; margin: 0; border-radius: 0; }
+.jumbotron { background-image: url("../images/hero.webp"); background-size: cover; margin: 0; border-radius: 0; }
 
 .jumbotron .logo { font-size: 42px; color: #fed136; font-family: "Lobster", cursive; font-style: italic; }
 
@@ -171,11 +171,11 @@ body { background-color: #fff; }
 
 .section-services .fas { height: 80px; width: 80px; background-size: cover; }
 
-.section-services .basket { background-image: url("../images/icon.basket.jpg"); }
+.section-services .basket { background-image: url("../images/icon.basket.webp"); }
 
-.section-services .laptop { background-image: url("../images/icon.laptop.jpg"); }
+.section-services .laptop { background-image: url("../images/icon.laptop.webp"); }
 
-.section-services .web { background-image: url("../images/icon.web.jpg"); }
+.section-services .web { background-image: url("../images/icon.web.webp"); }
 
 .section-services .item-2, .section-services .item-1, .section-services .item-3 { margin: 0 auto; max-width: 300px; }
 
@@ -247,7 +247,7 @@ body .section-about-us .right-text { margin-left: auto; text-align: left; }
 @media not all and (hover: none) { .section-partners .part:hover { transform: scale(1.1); transition: all ease 500ms; } }
 
 /* === CONTACT US === */
-.section-contact-us { padding: 50px 5%; background-image: url("../images/contact.jpeg"); background-size: cover; background-position: center; text-align: center; }
+.section-contact-us { padding: 50px 5%; background-image: url("../images/contact.webp"); background-size: cover; background-position: center; text-align: center; }
 
 .section-contact-us h2 { color: #fff; }
 
