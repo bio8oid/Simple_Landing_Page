@@ -474,7 +474,11 @@ label, input {
     flex-direction: column;
   }
 
-  .form-group-left, label,
+  label {
+    width: 100%;
+  }
+
+  .form-group-left,
   .textarea {
     width: 100%;
     margin: 20px 0;
