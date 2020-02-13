@@ -328,8 +328,9 @@ body .section-about-us {
   }
 }
 
-label {
-  display: none;
+label, input {
+  width: 100%;
+  margin: 0;
 }
 
 .form-group {
