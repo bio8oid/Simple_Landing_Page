@@ -267,16 +267,16 @@
     <!-- PARTNERS -->
 
     <div class="section-partners">
-        <a href="https://envato.com/" target="_blank">
+        <a href="https://envato.com/" target="_blank" rel="noopener">
             <div class="part"><img class="img-fluid" src="images/envato.webp" alt="partners"></div>
         </a>
-        <a href="https://wordpress.com/" target="_blank">
+        <a href="https://wordpress.com/" target="_blank" rel="noopener">
             <div class="part"><img class="img-fluid" src="images/WP.webp" alt="partners"></div>
         </a>
-        <a href="https://tutsplus.com/tutorials/search/after+effects" target="_blank">
+        <a href="https://tutsplus.com/tutorials/search/after+effects" target="_blank" rel="noopener">
             <div class="part"><img class="img-fluid" src="images/aetuts.webp" alt="partners"></div>
         </a>
-        <a href="https://studio.envato.com/" target="_blank">
+        <a href="https://studio.envato.com/" target="_blank" rel="noopener">
             <div class="part last"><img class="img-fluid" src="images/env-studio.webp" alt="partners"></div>
         </a>
     </div>
@@ -291,9 +291,12 @@
 
         <div class="container-fluid form-group">
             <form id="form-group" class="form-group-left">
-                <input type="text" class="form-control" placeholder="YOUR NAME *">
-                <input type="email" class="form-control middle" placeholder="YOUR E-MAIL *">
-                <input type="text" class="form-control" placeholder="SUBJECT">
+                <input id="text1" type="text" class="form-control" placeholder="YOUR NAME *">
+                <label for="text1"></label>
+                <input id="email" type="email" class="form-control middle" placeholder="YOUR E-MAIL *">
+                <label for="email"></label>
+                <input id="text2" type="text" class="form-control" placeholder="SUBJECT">
+                <label for="text2"></label>
             </form>
             <textarea class="form-control textarea" placeholder="YOUR MESSAGE *"></textarea>
         </div>
@@ -314,7 +317,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 
 </body>
 

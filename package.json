@@ -29,11 +29,11 @@
     "build:clean": "rimraf css",
     "build:sass": "node-sass --output-style compact -o docs/css sass",
     "build:autoprefixer": "autoprefixer-cli docs/css/style.css",
-    "build:terser": "terser js/script.js -o docs/js/script.js -c ",
+    "build:terser": "terser js/script.js -o docs/js/script.min.js -c ",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o docs/css sass",
     "watch": "npm-run-all -p watch:*",
     "watch:sassprefixer": "onchange sass/*.scss -- npm-run-all -p sassprefixer:*",
-    "watch:browsersync": "browser-sync start --server --files *.css *.html",
+    "watch:browsersync": "browser-sync start --server --files **/*.css *.html",
     "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o docs/css sass",
     "sassprefixer:autoprefixer": "autoprefixer-cli docs/css/style.css docs/css/style.css"
   },

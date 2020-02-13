@@ -328,6 +328,10 @@ body .section-about-us {
   }
 }
 
+label {
+  display: none;
+}
+
 .form-group {
   color: $light-grey;
   display: flex;
